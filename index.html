@@ -7,18 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
-    <title>Fibonacci</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>Formulário</title>
 </head>
 
 <body>
     <main>
-        <div class="box-container">
-            <h1>Fibonacci</h1>
-            <label for="numero">Digite o valor máximo da sequência que deseja:</label>
-            <input type="number" name="numero" id="numero">
-            <button id="calcular" onclick="fibonacci()">Calcular</button>
-            <div id="label">Sequência:</div>
-            <div id="resultado"></div>
+        <div id="form">
+            <h1>Formulário</h1>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="name" class="input">
+
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" id="age" class="input">
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="mail" class="input">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="phone" class="input">
+
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="address" class="input">
+
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep" class="input">
+
+            <input type="button" value="enviar" id="enviar" onclick="send()">
+
+            <table id="tbListar"></table>
         </div>
     </main>
 
