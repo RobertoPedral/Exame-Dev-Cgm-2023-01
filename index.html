@@ -7,23 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
-    <title>Tipo de Triângulo</title>
+    <title>Fibonacci</title>
 </head>
 
 <body>
-    <div id="calc">
-        <h1>Tipos de triângulos</h1>
-        <div class="values">
-            <label for="lado1" class="label">Lado 1</label>
-            <input type="number" name="lado1" id="lado1" class="input">
-            <label for="lado2" class="label">Lado 2</label>
-            <input type="number" name="lado2" id="lado2" class="input">
-            <label for="lado3" class="label">Lado 3</label>
-            <input type="number" name="lado3" id="lado3" class="input">
+    <main>
+        <div class="box-container">
+            <h1>Fibonacci</h1>
+            <label for="numero">Digite o valor máximo da sequência que deseja:</label>
+            <input type="number" name="numero" id="numero">
+            <button id="calcular" onclick="fibonacci()">Calcular</button>
+            <div id="label">Sequência:</div>
+            <div id="resultado"></div>
         </div>
-        <button id="btn" onclick="tipo()">Calcular</button>
-        <div id="resultado"></div>
-    </div>
+    </main>
 
 </body>
 
